@@ -33,9 +33,9 @@ GATE_SYMBOLS = {  "H" : ["[H]"],
                   "Z" : ["[Z]"],
                   "CX": ["[o]", "[+]"]}
 
-def get_num_qubits(gate_name:str):
+def get_num_qubits(gate_name: str):
     return len(GATE_MATRICES[gate_name]) // 2
 
-def to_matrix(gate_name:str):
+def to_matrix(gate_name: str):
     return GATE_MATRICES[gate_name]
 
